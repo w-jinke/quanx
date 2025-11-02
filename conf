@@ -15,6 +15,7 @@ server = 114.114.114.114
 
 [server_local]
 [server_remote]
+#https://132.232.133.234:10086/api/v1/client/subscribe?token=37ef9e1f0f3b849d3712581de1bbebd0#udp=-1&regex=香港0[1-6]&delreg=0, tag=订阅, update-interval=172800, opt-parser=true, enabled=true
 
 [filter_local]
 geoip, cn, direct
@@ -26,7 +27,6 @@ final, proxy
 [rewrite_remote]
 https://github.com/w-jinke/quanx/raw/refs/heads/main/rewrite/bilibili, tag=哔哩哔哩, img-url=play.tv.fill.system, update-interval=-1, opt-parser=false, enabled=true
 https://github.com/w-jinke/quanx/raw/refs/heads/main/rewrite/spotify, tag=Spotify, img-url=music.note.system, update-interval=-1, opt-parser=false, enabled=true
-https://github.com/w-jinke/quanx/raw/refs/heads/main/rewrite/youtube, tag=YouTube, img-url=play.rectangle.fill.system, update-interval=-1, opt-parser=false, enabled=true
 
 [task_local]
 event-interaction https://github.com/w-jinke/quanx/raw/refs/heads/main/js/iplookup.js, tag=节点IP查询, img-url=globe.system, enabled=true
