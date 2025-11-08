@@ -1,7 +1,0 @@
-# YouTube
-# 2025.9.18
-
-^https:\/\/[\w-]+\.googlevideo\.com\/initplayback.+&oad url reject-dict
-^https:\/\/y[a-z]*i\.googleapis\.com\/(youtubei\/v1\/(browse|next|player|search|reel\/reel_watch_sequence|guide|account\/get_setting|get_watch)) url script-response-body https://github.com/w-jinke/quanx/raw/refs/heads/main/js/youtube-response.js
-
-hostname = *.googlevideo.com,youtubei.googleapis.com
