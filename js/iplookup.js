@@ -85,7 +85,7 @@ fetchWithTimeout(myRequest, TIMEOUT)
         let ip = data.ip;
         let org = data.org.replace(/^AS\d+\s*/, "");
         let loc = data.loc.replace(",", "-");
-        let countryText = `${countryMap[data.country] || data.country}｜${data.country}`;
+        let countryText = `${countryMap[data.country] || data.country}-${data.country}`;
         let htmlMessage = `
             <div style="font-family: -apple-system; font-size: 13px; text-align: left; line-height: 1.9;">
                 <b>所在地：</b> ${countryText} <br>
