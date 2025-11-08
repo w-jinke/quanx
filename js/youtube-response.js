@@ -1,5 +1,4 @@
 // 修改自 Maasea 让QuantumultX使用能关闭YouTube短视频入口
-// 原脚本https://github.com/Maasea/sgmodule/raw/refs/heads/master/Script/Youtube/youtube.response.js
 
 (() => {
   var $r = Object.defineProperty;
